@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 添加图片-->
+    <!-- 属性名： -->
+    <!-- alt： 替换文本，当图片不显示时显示文字-->
+    <!-- title：鼠标悬停的时候显示 -->
+    <!-- width htight：设置高度和宽度，如果只设置一个值，会等比例缩放，图片不会变形 -->
+    <img src="./source/girl.jpeg" alt="girl" title="卡哇伊" width="300">
+    <hr>
+    <img src="C:\Users\fly72\Pictures\Saved Pictures\iu.webp" alt="IU" width="300">
+    <!-- 
+    路径：
+        绝对路径
+            盘符开头：D:\A-Document\Code\HTML\source\girl.jpeg  linux和mac系统是从/开头的根目录出发
+            完整的网络地址：http://localhost:52330/source/girl.jpeg    
+        相对路径
+            从当前文件开始出发找目标文件：./source/girl.jpeg
+            相对路径分类
+                当前路径：./ 或者 直接写文件名
+                上级路径：../
+                下级路径：./source/girl.jpeg 或者 source/girl.jpeg
+     -->
+
+     <!-- 出现问题：以上绝对路径显示不出图片。而
+                   在本地直接打开此04-图片标签.html，图片可以正常显示。 -->
+     <!-- 原因：编译器的Web服务器无法访问本地文件。 为什么？？ -->
+     <!-- 解决方法：下载open in browser插件，而不是open in default browser插件 -->
+</body>
+</html>

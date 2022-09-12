@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 跨行合并（rowspan）跨列合并（colspan） -->
+    <!-- 上下合并，保留上，删除其他 -->
+    <!-- 左右合并，保留左，删除其他 -->
+    <table border="1" width="300" height="200">
+        <caption><b>学生成绩单</b></caption>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>评分</th>
+                <th>评语</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>小哥哥</td>
+                <td rowspan="2">100</td>
+                <td>优秀</td>
+            </tr>
+            <tr>
+                <td>小姐姐</td>
+                <!-- <td>100</td> -->
+                <td>优秀</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总结</td>
+                <td colspan="2">郎才女貌</td>
+                <!-- <td>郎才女貌</td> -->
+            </tr>
+        </tfoot>
+    </table>
+    <!-- 只有同一个结构标签中的单元格才能合并，不能跨结构标签合并（不能跨：thead tbody tfoot） -->
+</body>
+</html>

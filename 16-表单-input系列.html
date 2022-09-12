@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- input标签可以通过type属性值的不同，展示不同的效果 -->
+    <!-- type属性名 -->
+        <!-- text 文本框写什么显示什么-->         
+        <!-- password 密码框输入变成加密-->
+        <!-- radio 单选框，用于多选一  -->
+        <!-- checkbox 多选框，用于多选多-->
+        <!-- file 文件选择，用于上传文件-->
+
+        <!-- submit 提交按钮-->
+        <!-- reset 重置按钮，用于重置-->
+        <!-- button 普通按钮，默认无功能，之后配合js添加功能-->
+    
+    <br>
+    <!-- placeholder属性名 -->
+    文本框：<input type="text" placeholder="请输入用户名">   
+    <br> 
+    密码框：<input type="password" placeholder="请输入密码">
+    <br>
+    <hr>
+
+    单选框：<input type="radio">
+    <!-- name属性：分组。
+         checked属性：默认选中 -->
+    <br>
+    <b>性别：</b><input type="radio" name="gender"><b>男</b> 
+                 <input type="radio" name="gender" checked><b>女</b>
+    <br>
+    <br>
+    
+    多选框：<input type="checkbox">
+    <br>
+    水果：<input type="checkbox" name="fruit">苹果
+    <input type="checkbox" name="fruit">香蕉
+    <input type="checkbox" name="fruit" checked>橘子
+    <br>
+    <hr>
+    
+    文件选择：<input type="file">
+    <br>
+    <!-- multiple 选择多个文件 -->
+    多个文件选择：<input type="file" multiple>
+
+</body>
+</html>

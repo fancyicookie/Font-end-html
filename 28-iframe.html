@@ -1,0 +1,39 @@
+<!--
+ * @Date: 2023-01-05 11:09:12
+ * @Author: Fancyicookie
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        p {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- iframe 元素会创建包含另一个文档的内联框架（即行内框架） -->
+    <h1>框架中嵌套框架--iframe</h1>
+    <p>
+        框架嵌套框架解决方案一： frameset 元素可定义一个框架集。它被用来组织多个窗口（框架）。每个框架存有独立文档。
+        在其最简单的应用中，frameset 元素仅仅会规定框架集中存在多少列和多少行，必须使用 cols 或 rows 属性
+    </p>
+    <p>
+        框架嵌套框架方案二：iframe 元素会创建包含另一个文档的内联框架（即行内框架）
+    </p>
+
+    <h3>iframe 框架的应用</h3>
+    <iframe src="./25-综合案例-学生表信息.html" frameborder="0"></iframe>
+    <iframe src="./26-综合案例-表单.html" frameborder="0"></iframe>
+    <iframe src="http://www.baidu.com" frameborder="0"></iframe>
+
+</body>
+</html>

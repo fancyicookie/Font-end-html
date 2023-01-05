@@ -1,0 +1,40 @@
+<!--
+ * @Date: 2023-01-05 09:30:26
+ * @Author: Fancyicookie
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mycanvas {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 拖动属性draggable -->
+    <!-- <img src="./source/girl.jpeg" alt="" draggable="true" width="200" height="200"> -->
+
+    <!-- 
+        id: 标识元素的唯一性
+        width: 画布宽度
+        height: 画布高度
+        canvas的高宽 与 style的高宽 不一样!!
+     -->
+    <canvas class="mycanvas" id="myCanvas" width="400" height="400"></canvas>
+    
+    <script>
+        // 1.找到画布
+        var c1 = document.getElementById('myCanvas');
+        // 2. 获取画笔,上下文对象
+        var ctx = c1.getContext('2d');
+        // 3.绘制图形
+        // 3.1绘制矩形fillRect(位置x，位置y，宽度，高度)
+        ctx.fillRect(100,100,200,100)
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!--
+ * @Date: 2023-03-23 16:40:28
+ * @Author: Fancyicookie
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            float: left;
+            width: 240px;
+            background-color: skyblue;
+        }
+        .div2 {
+            /* margin-left: 240px; */
+            overflow: hidden;
+            background-color: pink;
+        }
+        .div3 {
+            position: absolute;
+            width: 240px;
+            background-color: rgb(216, 199, 71);
+        }
+        .div4 {
+            margin-left: 240px;
+            background-color: rgb(65, 205, 109);
+        }
+        .parent {
+            display: flex;
+        }
+        .div5 {
+            width: 240px;
+            background-color: #6a93c4;
+        }
+        .div6 {
+            flex: 1;
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <!-- 一栏定宽，一栏自适应 
+        float: left; 使左边的元素脱离文档流；
+        margin-left 让右边的元素不覆盖掉左边的元素。-->
+    
+    <!-- float: left; 使左边的元素脱离文档流； 
+        overflow：hidden；自适应的盒子; 会触发块级格式化上下文（BFC），利用了BFC 不会重叠浮动元素的特点。 -->
+    
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+    
+    <!-- 左边绝对定位，右边设置margin-left -->
+    <div class="div3">div3</div>
+    <div class="div4">div4</div>
+    
+    <!-- flex布局 -->
+    <div class="parent">
+        <div class="div5">div5</div>
+        <div class="div6">div6</div>
+    </div>
+</body>
+</html>

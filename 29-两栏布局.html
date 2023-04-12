@@ -29,6 +29,7 @@
             margin-left: 240px;
             background-color: rgb(65, 205, 109);
         }
+        /* flex */
         .parent {
             display: flex;
         }
@@ -39,6 +40,24 @@
         .div6 {
             flex: 1;
             background-color: gold;
+        }
+
+        .card {
+            background-color: skyblue;
+            display: flex;
+        }
+        .card .pic {
+            width: 80px;
+            height: 80px;
+            background-color: pink;
+        }
+        .card .info {
+            width: 200px;
+            display: flex;
+            flex-direction: column
+        }
+        .info .button {
+            align-self: flex-end;
         }
     </style>
 </head>
@@ -61,6 +80,18 @@
     <div class="parent">
         <div class="div5">div5</div>
         <div class="div6">div6</div>
+    </div>
+
+    <hr>
+    <div class="card">
+        <div class="pic"></div>
+        <div class="info">
+            <div class="header">biaoti</div>
+            <div class="price">jiage</div>
+            <div class="button">
+                <button>goumai</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="ctx" class="ctx" width="600" height="600"></canvas>
+</body>
+
+<script>
+    const ctx = document.getElementById('ctx')
+    const c = ctx.getContext('2d')
+
+    // 绘制实心红色三角形
+    // c.beginPath();
+    // c.fillStyle = 'red';
+    // c.moveTo(150, 150);
+    // c.lineTo(350, 150);
+    // c.lineTo(250, 50);
+    // c.lineTo(150, 150);
+    // c.fill()
+    // c.closePath()
+
+    // // 绘制实心的绿色矩形
+    // c.beginPath();
+    // c.fillStyle = 'green';
+    // c.moveTo(150, 250);
+    // c.lineTo(150, 350);
+    // c.lineTo(350, 350);
+    // c.lineTo(350, 250);
+    // c.fill()
+    // c.closePath()
+
+    // // 绘制一个圆形
+    // c.beginPath();
+    // c.fillStyle = 'red';
+    // c.arc(150, 450, 50, 0, 2 * Math.PI);
+    // c.fill();
+    // c.closePath()
+
+
+    // 绘制实心的绿色矩形
+    c.beginPath();
+    c.fillStyle = 'green';
+    c.moveTo(150, 250);
+    c.lineTo(150, 350);
+    c.lineTo(350, 350);
+    c.lineTo(350, 250);
+    // 添加阴影
+    c.shadowOffsetX = 10;
+    c.shadowOffsetY = 10;
+    c.shadowColor = 'black';
+    c.shadowBlur = 10;
+    c.fill()
+    c.closePath()
+</script>
+</html>

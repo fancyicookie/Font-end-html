@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ctx {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="ctx" class="ctx" width="600" height="600"></canvas>
+</body>
+<script>
+    const ctx = document.getElementById('ctx')
+    const c = ctx.getContext('2d')
+    // // 绘制实心文本
+    // c.font = '40px 宋体';
+    // c.fillStyle = 'blue';
+    // c.fillText('hello world', 100, 100);
+    // // 绘制空心文本
+    // c.font = '40px 宋体';
+    // c.strokeStyle = 'orange';
+    // c.strokeText('hello world', 200, 200);
+
+    // 垂直对齐方式：textBaseLine: top bottom middle alphabetic hanging ideographic  
+    // 水平居中：textAlign：start end center left right
+    // 不固定宽高的画布水平居中: measureText
+
+
+    // 动画
+    // save restore
+    // translate(x, y) 平移
+    // rotate(deg) 旋转
+    // scale(x, y) 缩放
+
+    // 原始矩形
+    // c.save()
+    // c.fillRect(10, 10, 100, 100);
+    // c.restore()
+    
+    // 平移，并没有改变，只是原点位置变了
+    // c.save()
+    // c.translate(100, 100);
+    // c.restore()
+
+    // // 旋转45度
+    // c.save()
+    // c.rotate(45 * Math.PI / 180);
+    // c.fillRect(210, 110, 100, 100)
+    // c.restore()
+
+    // // x轴缩放0.5 y轴缩放1.1
+    // c.save()
+    // c.scale(0.5, 1.1)
+    // c.fillRect(410, 210, 100, 100)
+    // c.restore()
+
+    // 将画布中心移入到 50，50 这个点
+    // c.translate(50, 50);
+    // setInterval(() => {
+    // // 每次绘制之前先清空画布，这里的原点已经在50，50这个位置了。所以需要从 -50这里开始清理。
+    // c.clearRect(-50, -50, ctx.width, ctx.height);
+    // // 每次旋转 1 度
+    // c.rotate(Math.PI / 180);
+    // // 绘制实心矩形。
+    // c.fillRect(-25,-25, 50,50);
+    // }, 16)
+
+    // transformer矩阵操作
+</script>
+</html>

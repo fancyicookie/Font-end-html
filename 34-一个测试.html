@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .left {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            top: 0;
+            bottom: 0;
+            left: 0;
+        }
+        .right {
+            /* width: 200px;  绝对定位之后宽度无效*/
+            height: 200px;
+            background-color: skyblue;
+            padding: 0 0 0 200px;
+        }
+        .son {
+            position: absolute;
+            top: 100px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="left">左边div不嵌套</div>
+    <div class="right">
+        <div class="son">
+            <p>div嵌套两层下的p, 11111111111111111111111111111</p>
+        </div>
+    </div>
+    
+</body>
+</html>

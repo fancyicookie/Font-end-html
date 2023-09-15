@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabric</title>
+    <style>
+        #canvas {
+            width: 600px;
+            height: 600px;
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="1000" height="1000"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/fabric"></script>
+    <script>
+    const canvas = new fabric.Canvas('canvas');
+    const img = new fabric.Image.fromURL('watermelon.jpeg', function (oImg) {
+        oImg.set({
+            top:10,
+            left:10,
+            scaleX:1,
+            scaleY:1
+        })
+        oImg.width
+        oImg.height
+        canvas.add(oImg);
+    })
+    
+    </script>
+</body>
+</html>
